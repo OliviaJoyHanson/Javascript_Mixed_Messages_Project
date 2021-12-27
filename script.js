@@ -5,9 +5,9 @@ const randomNumber = () => {
 };
 
 const words = {
-    nouns: ["car", "dog", "cat", "human", "cup", "fish"],
-    adverbs: ["freakishly", "stupidly", "voraciously", "gloriously", "shyly"],
-    verbs: ["ran", "spun", "punched", "climbed", "ate"]
+    nouns : ["car", "dog", "cat", "human", "cup", "fish"],
+    adverbs : ["freakishly", "stupidly", "voraciously", "gloriously", "shyly"],
+    verbs : ["ran", "spun", "punched", "climbed", "ate"]
 };
 
 const phrases = [
@@ -19,14 +19,11 @@ const phrases = [
 const adLibPhrase = () => {
     const ranNum = randomNumber();
     
-    const noun = words[nouns[randomNumber()]];
-    const adverb = words[abverbs[randomNumber()]];
-    const verb = words[verbs[randomNumber()]];
+    const noun = words.nouns[randomNumber()];
+    const adverb = words.adverbs[randomNumber()];
+    const verb = words.verbs[randomNumber()];
 
     const phrase = phrases[ranNum];
 
     const splitPhrase = phrase.split(" ");
-    console.log(splitPhrase);
 }
-
-adLibPhrase();
