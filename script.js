@@ -1,6 +1,9 @@
-const randomNumber = (num) => {
-    return Math.random(Math.floor() * num)
+const randomNumber = () => {
+    const nums = [1,2,3,4,5]
+    const num = nums[Math.floor(Math.random() * nums.length)];
+    return num
 };
+console.log(randomNumber(5));
 
 const words = {
     nouns: ["car", "dog", "cat", "human", "cup", "fish"],
@@ -14,3 +17,8 @@ const phrases = [
     "What the noun?! They adverb verb into the barn!"
 ];
 
+const adLibPhrase = (num) => {
+    const ranNum = randomNumber(num);
+
+
+}
